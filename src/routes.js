@@ -1,5 +1,6 @@
 import routesPaths from 'constants/routesPaths';
 import HomePage from 'containers/HomePage';
+import LoginPage from 'containers/LoginPage';
 import NotFoundPage from 'containers/NotFoundPage';
 
 const routes = [
@@ -8,6 +9,10 @@ const routes = [
     component: HomePage,
     exact: true,
     private: true
+  },
+  {
+    path: routesPaths.login,
+    component: LoginPage
   },
   {
     component: NotFoundPage
