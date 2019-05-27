@@ -1,7 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import ProgressiveImage from 'react-progressive-image';
-
+import Navigation from '../components/common/Navigation';
 import HomePageFooter from '../components/homepage/HomePageFooter';
 import backgroundImage from '../assets/landing.png';
 import LandingGallery from '../components/homepage/LandingGallery';
@@ -26,6 +26,7 @@ const HomePage = () => (
           <Helmet>
             <title>Fullscript | Grow your practice</title>
           </Helmet>
+          <Navigation />
         </div>
       )}
     </ProgressiveImage>

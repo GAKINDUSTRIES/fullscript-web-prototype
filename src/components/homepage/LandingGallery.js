@@ -21,7 +21,7 @@ const galleryArray = [
 
 
 const LandingGallery = () => {
-  const galleryItems = galleryArray.concat(galleryArray.slice(0)).map(company =>
+  const galleryItems = galleryArray.map(company =>
     <div key={company.src} className="companies-gallery-item">
       <img src={company.src} alt={company.alt} />
     </div>);
