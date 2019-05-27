@@ -1,5 +1,5 @@
 import React from 'react';
-import { string, integer } from 'prop-types';
+import { string } from 'prop-types';
 import ProgressiveImage from 'react-progressive-image';
 
 const SideImage = ({ src, placeholder, className = 'side-img' }) => (

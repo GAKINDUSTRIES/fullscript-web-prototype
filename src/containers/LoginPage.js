@@ -1,7 +1,7 @@
 import React, { memo } from 'react';
 import { bool, func } from 'prop-types';
 import { connect } from 'react-redux';
-import {  Redirect } from 'react-router-dom';
+import { Redirect } from 'react-router-dom';
 import { FormattedMessage } from 'react-intl';
 
 import LoginForm from 'components/user/LoginForm';
@@ -20,7 +20,7 @@ const LoginPage = ({ login, authenticated }) => {
   return (
     <div>
       <div className="side-image-container">
-        <SideImage src={sideImage} placeholder="login-side-image.jpg"/>
+        <SideImage src={sideImage} placeholder="login-side-image.jpg" />
       </div>
       <div className="form-container">
         <SideImage className="logo-img" src={greenLogo} placeholder="green-logo.png" delay={2000} />

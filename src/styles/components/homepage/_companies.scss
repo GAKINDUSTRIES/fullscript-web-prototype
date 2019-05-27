@@ -1,0 +1,71 @@
+@import '../../common/_constants.scss';
+
+.companies {
+  $companies-length: 12;
+  $item-dimension: 23rem;
+  $items-width: $companies-length * $item-dimension;
+  $animation-seconds: $companies-length * 4 + s;
+  $slide-gap: 1.2rem;
+  $slider-width: #{$items-width + $slide-gap * $companies-length};
+
+  margin: 5rem auto;
+  max-width: $md-screen;
+  text-align: center;
+
+  &-description {
+    border-bottom: $border;
+    margin: auto;
+    padding-bottom: 2rem;
+
+    @media (min-width: $sm-screen) { width: 65%; }
+  }
+
+  h2 {
+    color: $slate-grey;
+    font-size: 3.5em;
+    margin-top: 0;
+
+    @media (max-width: $sm-screen) { font-size: 3.2em; }
+  }
+
+  p {
+    color: $slate-grey;
+    font-size: $paragraph-font-size;
+    line-height: 1.4;
+  }//Paragraph
+
+  &-gallery {
+    height: 23rem;
+    margin-top: 2.8rem;
+    overflow: hidden;
+    text-align: left;
+    width: 100%;
+
+    &-item {
+      align-items: center;
+      display: flex;
+      float: left;
+      height: $item-dimension;
+      margin-right: $slide-gap;
+      width: $item-dimension;
+
+      img {
+        margin: 0 auto;
+        max-width: 90%;
+      }
+    }//item
+  }//gallery
+
+  @keyframes slide-left {
+    0% { left: 0; }
+    100% { left: calc(100% - #{$slider-width}); }
+  }
+
+  &-slider {
+    animation: slide-left $animation-seconds linear 0s alternate infinite;
+    height: 100%;
+    left: 0;
+    position: relative;
+    width: $slider-width;
+  }//slider
+}//Landing companies section
