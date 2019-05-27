@@ -14,7 +14,7 @@ const Input = ({
   <div>
     {label && <label>{label}</label>}
     <div>
-      <input {...input} {...{ placeholder, type }} />
+      <input className="input-default" {...input} {...{ placeholder, type }} />
       {touched && error &&
         <span>
           <FormattedMessage

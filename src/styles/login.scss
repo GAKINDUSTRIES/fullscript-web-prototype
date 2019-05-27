@@ -1,0 +1,70 @@
+@import './constants.scss';
+
+.side-image-container {
+  float: left;
+  width: 50%;
+}
+
+
+  .logo-img {
+    background-image: url(http://localhost:8000/logo-green.png);
+    height: 8vh;
+    background-repeat: no-repeat;
+    height: 53px;
+    width: 63px;
+    margin: auto;
+    margin-bottom: 4vh;
+  }
+
+.side-img {
+  background-size: cover;
+  height: 100vh;
+  max-width: 100%;
+  position: relative;
+}
+
+.form-container {
+  float: right;
+  margin: auto;
+  margin-top: 10vw;
+  width: 50%;
+
+  form, h1, img {
+    width: 25vw;
+    align-items: center;
+    display: table;
+    margin: auto;
+  }
+
+  input, button {
+    width: 100%
+  }
+
+  h1 {
+    color: color('greenery');
+  }
+}
+
+.button-primary {
+  background-color: #88B04B;
+  border-color: #88B04B;
+  color: #fff;
+  padding: .5rem 1rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  border-radius: .3rem;
+}
+
+@media screen and (max-width: 780px) {
+  .side-image-container {
+    width: 0;
+  }
+
+  .form-container {
+    width: 100%;
+
+    form, h1, img {
+      width: 80vw;
+    }
+  }
+}

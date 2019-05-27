@@ -20,7 +20,7 @@ const messages = defineMessages({
 export const LoginForm = ({ handleSubmit, error, submitting, intl }) => (
   <form onSubmit={handleSubmit}>
     {error && <strong>{error}</strong>}
-    <div>
+    <div className="input-wrapper">
       <Field
         name="email"
         label={intl.formatMessage(messages.email)}
@@ -28,7 +28,7 @@ export const LoginForm = ({ handleSubmit, error, submitting, intl }) => (
         type="email"
       />
     </div>
-    <div>
+    <div className="input-wrapper">
       <Field
         name="password"
         label={intl.formatMessage(messages.password)}
@@ -36,7 +36,7 @@ export const LoginForm = ({ handleSubmit, error, submitting, intl }) => (
         type="password"
       />
     </div>
-    <button type="submit">
+    <button className="button-primary" type="submit">
       <FormattedMessage id="login.form.submit" />
     </button>
     {submitting && <Loading />}

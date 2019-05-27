@@ -7,6 +7,10 @@ import { FormattedMessage } from 'react-intl';
 import LoginForm from 'components/user/LoginForm';
 import { login } from 'actions/sessionActions';
 import routes from 'constants/routesPaths';
+import sideImage from '../assets/login-picture.png';
+import greenLogo from '../assets/logo-green.png';
+import SideImage from '../components/common/SideImage';
+import '../styles/login.scss';
 
 const LoginPage = ({ login, authenticated }) => {
   if (authenticated) {
@@ -15,8 +19,14 @@ const LoginPage = ({ login, authenticated }) => {
 
   return (
     <div>
-      <p><FormattedMessage id="login.title" /></p>
-      <LoginForm onSubmit={login} />
+      <div className="side-image-container">
+        <SideImage src={sideImage} placeholder="login-side-image.jpg"/>
+      </div>
+      <div className="form-container">
+        <SideImage className="logo-img" src={greenLogo} placeholder="green-logo.png" delay={2000} />
+        <h1><FormattedMessage id="login.title" /></h1>
+        <LoginForm onSubmit={login} />
+      </div>
     </div>
   );
 };

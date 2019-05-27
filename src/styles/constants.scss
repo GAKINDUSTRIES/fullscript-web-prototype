@@ -1,0 +1,10 @@
+$colorPalette: (
+  'greenery': #88b04b,
+  'orion': #404f5e,
+  'berry': #1c7aba,
+  'white': #fff,
+);
+
+@function color($key: 'primary') {
+  @return map-get($colorPalette, $key);
+}
