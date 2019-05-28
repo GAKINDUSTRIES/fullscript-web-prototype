@@ -11,4 +11,6 @@ export default {
   'email.presence': 'You must enter an email to continue',
   'email.invalid': 'You must enter a valid email',
   'password.presence': 'You must enter a password to continue',
+
+  'logout.button': 'Logout'
 };

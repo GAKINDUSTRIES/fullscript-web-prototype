@@ -1,0 +1,20 @@
+import React from 'react';
+import { func } from 'prop-types';
+import { connect } from 'react-redux';
+import { FormattedMessage } from 'react-intl';
+
+import { logout } from 'actions/sessionActions';
+
+const LogoutButton = ({ logout }) => (
+  <button className="button button-secondary" onClick={logout}>
+    <FormattedMessage id="logout.button" />
+  </button>
+);
+
+LogoutButton.propTypes = {
+  logout: func.isRequired
+};
+
+const mapDispatch = ({ logout });
+
+export default connect(null, mapDispatch)(LogoutButton);

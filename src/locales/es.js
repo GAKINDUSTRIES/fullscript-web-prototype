@@ -15,4 +15,6 @@ export default {
   'email.presence': 'Debe ingresar un email para continuar',
   'email.invalid': 'Debe ingresar un email válido',
   'password.presence': 'Debe ingresar una contraseña para continuar',
+
+  'logout.button': 'Logout'
 };

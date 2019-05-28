@@ -55,6 +55,15 @@
   border-radius: .3rem;
 }
 
+.button-secondary {
+  @extend .button-primary;
+  background-color: color('orion');
+  border-color: color('orion');
+  font-size: 1.4em;
+  font-weight: 700;
+  margin: 0 1vw;
+}
+
 @media screen and (max-width: 780px) {
   .side-image-container {
     width: 0;

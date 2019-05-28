@@ -4,7 +4,8 @@ import { Link, NavLink } from 'react-router-dom';
 
 import FullscriptLogo from '../../assets/fullscript-icn.png';
 import routes from '../../constants/routesPaths';
-import '../../styles/common/_navigation.scss'
+import '../../styles/common/_navigation.scss';
+import LogoutButton from './../user/LogoutButton';
 
 class Navigation extends Component {
   constructor() {
@@ -39,12 +40,12 @@ class Navigation extends Component {
 
   render() {
     const { openMenu, shadowHeader } = this.state;
-    const { black, isSticky } = this.props;
+    const { isSticky } = this.props;
 
     return (
       <header
         style={{ position: isSticky ? 'fixed' : 'static' }}
-        className={`navigation-guest ${openMenu ? 'navigation-guest-open' : ''} ${black || shadowHeader ? 'shadow-header' : ''}`}
+        className={`navigation-guest ${openMenu ? 'navigation-guest-open' : ''} ${shadowHeader ? 'shadow-header' : ''}`}
       >
         <div className="navigation-top">
           <Link to={routes.index}>
@@ -60,11 +61,11 @@ class Navigation extends Component {
           </div>
         </div>
         <div className={`right-content ${openMenu ? 'open' : ''}`}>
-          <NavLink to="#" activeClassName="active-link">How it works</NavLink>
-          <NavLink to="#" activeClassName="active-link">Patients</NavLink>
-          <NavLink to="#" activeClassName="active-link">Blog</NavLink>
+          <NavLink to="https://fullscript.com/how-it-works" activeClassName="active-link">How it works</NavLink>
+          <NavLink to="https://fullscript.com/patients" activeClassName="active-link">Patients</NavLink>
+          <NavLink to="https://fullscript.com/blog" activeClassName="active-link">Blog</NavLink>
           <NavLink to="#" className="button button-primary button-rate">Rate Products!</NavLink>
-          <NavLink to="#" className="button button-logout">Log Out</NavLink>
+          <LogoutButton />
         </div>
       </header>
     );
@@ -72,12 +73,10 @@ class Navigation extends Component {
 }
 
 Navigation.propTypes = {
-  black: bool,
   isSticky: bool
 };
 
 Navigation.defaultProps = {
-  black: false,
   isSticky: true
 };
 
