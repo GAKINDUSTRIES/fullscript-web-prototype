@@ -1,1 +1,5 @@
-// action types
+// restaurant actions
+export const FETCH_PRODUCTS = 'FETCH_PRODUCTS';
+export const FETCH_PRODUCTS_SUCCESS = 'FETCH_PRODUCTS_SUCCESS';
+export const RATE_PRODUCT = 'RATE_PRODUCTS';
+export const RATE_PRODUCT_SUCCESS = 'RATE_PRODUCTS_SUCCESS';

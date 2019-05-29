@@ -64,7 +64,7 @@ class Navigation extends Component {
           <NavLink to="https://fullscript.com/how-it-works" activeClassName="active-link">How it works</NavLink>
           <NavLink to="https://fullscript.com/patients" activeClassName="active-link">Patients</NavLink>
           <NavLink to="https://fullscript.com/blog" activeClassName="active-link">Blog</NavLink>
-          <NavLink to="#" className="button button-primary button-rate">Rate Products!</NavLink>
+          <NavLink to="/products" className="button button-primary button-rate">Rate Products!</NavLink>
           <LogoutButton />
         </div>
       </header>

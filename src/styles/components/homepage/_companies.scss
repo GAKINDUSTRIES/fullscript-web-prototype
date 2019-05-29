@@ -21,7 +21,7 @@
   }
 
   h2 {
-    color: $slate-grey;
+    color: color('slate-grey');
     font-size: 3.5em;
     margin-top: 0;
 
@@ -29,7 +29,7 @@
   }
 
   p {
-    color: $slate-grey;
+    color: color('slate-grey');
     font-size: $paragraph-font-size;
     line-height: 1.4;
   }//Paragraph

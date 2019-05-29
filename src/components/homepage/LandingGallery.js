@@ -19,7 +19,6 @@ const galleryArray = [
   { src: logocharm, alt: 'charm Logo' }
 ];
 
-
 const LandingGallery = () => {
   const galleryItems = galleryArray.map(company =>
     <div key={company.src} className="companies-gallery-item">
@@ -30,8 +29,8 @@ const LandingGallery = () => {
     <section className="companies">
       <div className="companies-description">
         <h2>Integrations</h2>
-        <p>You can now easily dispense professional-grade supplements from the industry's largest online catalog directly to your patients, without inventory, and without leaving your EHR platform.
-</p>
+        <p>You can now easily dispense professional-grade supplements from the industrys largest online catalog directly to your patients, without inventory, and without leaving your EHR platform.
+        </p>
       </div>
       <div className="companies-gallery">
         <div className="companies-slider">

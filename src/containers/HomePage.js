@@ -1,4 +1,5 @@
 import React from 'react';
+import { bool } from 'prop-types';
 import { Helmet } from 'react-helmet';
 import { connect } from 'react-redux';
 import { Redirect } from 'react-router-dom';
@@ -41,7 +42,11 @@ const HomePage = ({ authenticated }) => {
       <LandingGallery />
       <HomePageFooter />
     </main>
-  )
+  );
+};
+
+HomePage.propTypes = {
+  authenticated: bool.isRequired
 };
 
 const mapState = state => ({

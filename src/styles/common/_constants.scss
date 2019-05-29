@@ -1,4 +1,5 @@
-// screens
+@import './../colors.scss';
+
 $sm-screen: 576px;
 $md-screen: 992px;
 $header-breakepoint: 840px;
@@ -13,56 +14,7 @@ $font-weight-medium: 500; //Only Roboto
 $font-weight-bold: 700;
 
 $paragraph-font-size: 1.6em;
-
-// colors
-$white: #fff;
-$black: #000;
-$alabaster: #f8f8f8;
-$porcelain: #eef1f2;
-$mercury: #e4e4e4;
-$orange: #fc9f43;
-$orange-shadow: #db884b;
-$orange-hover: #ec953f;
-$light-orange: #fb9e43;
-$dull-orange: #e08d3a;
-$apricot: #fbaf63;
-$blue-grey: #7a7aa1;
-$charcoal-grey: #33333e;
-$slate-grey: #66666c;
-$storm-grey: #565668;
-$steel-grey: #858e98;
-$tuna-grey: #34343e;
-$light-grey: #ecebea;
-$strong-grey: #c1bfbd;
-$cool-grey: #b6b7c5;
-$french-gray: #b7b7c6;
-$athens-gray: #e8e9ec;
-$athens-gray-darker: #e5e6ea;
-$alto-grey: #ddd;
-$alto-dark-grey: #d8d8d8;
-$silver: #cdced2;
-$light-red: #ea8f8f;
-$pale-grey: #eff1f3;
-$pale-light-grey: #f3f5f6;
-$twilight: #4c4c89;
-$dark-violet: #6c49ae;
-$twilight-grey: #a2a2be;
-$rosy-pink: #f25a6c;
-$rosy-pink-darker: #f35a6d;
-$rosy-pink-shadow: #86444c;
-$rosy-pink-hover: #d04758;
-$teal: #78dcb8;
-$seafoam-blue: #68d8ab;
-$pine: #295342;
-$light-indigo: #865bd6;
-$dark-indigo: #402b68;
-$pale-lilac: #e1e1ff;
-$bridal-heath: #fffcf6;
-$kabul: #594e45;
-$soya-bean: #5c5148;
-
-$border: solid .1rem $silver;
-
+$border: solid .1rem color('silver');
 $nav-min-height: 6.5rem;
-
 $container-side-img-mg-top: 5.6rem;
+$shadow-card-color: rgba(color('black'), .15);

@@ -5,16 +5,13 @@
   width: 50%;
 }
 
-
-  .logo-img {
-    background-image: url(http://localhost:8000/logo-green.png);
-    height: 8vh;
-    background-repeat: no-repeat;
-    height: 53px;
-    width: 63px;
-    margin: auto;
-    margin-bottom: 4vh;
-  }
+.logo-img {
+  background-image: url(http://localhost:8000/logo-green.png);
+  background-repeat: no-repeat;
+  height: 8vh;
+  margin: auto;
+  margin-bottom: 4vh;
+}
 
 .side-img {
   background-size: cover;
@@ -29,15 +26,18 @@
   margin-top: 10vw;
   width: 50%;
 
-  form, h1, img {
-    width: 25vw;
+  form,
+  h1,
+  img {
     align-items: center;
     display: table;
     margin: auto;
+    width: 25vw;
   }
 
-  input, button {
-    width: 100%
+  input,
+  button {
+    width: 100%;
   }
 
   h1 {
@@ -46,17 +46,18 @@
 }
 
 .button-primary {
-  background-color: #88B04B;
-  border-color: #88B04B;
-  color: #fff;
-  padding: .5rem 1rem;
+  background-color: color('greenery');
+  border-color: color('greenery');
+  border-radius: .3rem;
+  color: color('white');
   font-size: 1.25rem;
   line-height: 1.5;
-  border-radius: .3rem;
+  padding: .5rem 1rem;
 }
 
 .button-secondary {
   @extend .button-primary;
+
   background-color: color('orion');
   border-color: color('orion');
   font-size: 1.4em;
@@ -72,7 +73,9 @@
   .form-container {
     width: 100%;
 
-    form, h1, img {
+    form,
+    h1,
+    img {
       width: 80vw;
     }
   }

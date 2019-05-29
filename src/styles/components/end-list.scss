@@ -1,0 +1,11 @@
+@import '../common/constants.scss';
+
+.end-list {
+  align-items: center;
+  color: color('light-grey');
+  display: flex;
+  font-size: 1.4rem;
+  justify-content: center;
+  line-height: normal;
+  margin-bottom: 3.5rem;
+}

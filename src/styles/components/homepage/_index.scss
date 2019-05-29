@@ -1,5 +1,4 @@
 @import '../../common/_constants.scss';
-@import '../../colors.scss';
 
 .landing-hero {
   background-color: color('white');
@@ -58,7 +57,7 @@
 
 .landing-footer {
   p {
-    color: $french-gray;
+    color: color('french-gray');
     font-family: $lato;
     font-size: 1.8em;
     letter-spacing: .02rem;
@@ -84,12 +83,12 @@
     padding: 1.7rem;
 
     a {
-      color: $white;
+      color: color('white');
       text-decoration: none;
     }
 
     span {
-      color: $slate-grey;
+      color: color('slate-grey');
       padding: 0 1rem;
     }
   }//other links

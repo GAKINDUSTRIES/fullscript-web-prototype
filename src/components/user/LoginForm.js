@@ -25,6 +25,7 @@ export const LoginForm = ({ handleSubmit, error, submitting, intl }) => (
         name="email"
         label={intl.formatMessage(messages.email)}
         component={Input}
+        placeholder="guillermo@techsniffer.me"
         type="email"
       />
     </div>
@@ -33,6 +34,7 @@ export const LoginForm = ({ handleSubmit, error, submitting, intl }) => (
         name="password"
         label={intl.formatMessage(messages.password)}
         component={Input}
+        placeholder="12345678"
         type="password"
       />
     </div>

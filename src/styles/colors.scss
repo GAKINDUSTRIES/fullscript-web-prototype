@@ -1,9 +1,16 @@
 $colorPalette: (
+  'black': #000,
+  'blackish': #495057,
   'greenery': #88b04b,
+  'light-greenery': #abbdb1,
   'orion': #404f5e,
   'berry': #1c7aba,
-  'reddish':#ff8484,
+  'french-gray': #b7b7c6,
+  'reddish': #ff8484,
+  'silver': #cdced2,
+  'slate-grey': #66666c,
   'white': #fff,
+  'yellow': #fc6
 );
 
 @function color($key: 'primary') {
