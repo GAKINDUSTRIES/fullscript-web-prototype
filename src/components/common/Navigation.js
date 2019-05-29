@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { bool } from 'prop-types';
 import { Link, NavLink } from 'react-router-dom';
+import GitHubButton from 'react-github-btn'
 
 import FullscriptLogo from '../../assets/fullscript-icn.png';
 import routes from '../../constants/routesPaths';
@@ -61,9 +62,13 @@ class Navigation extends Component {
           </div>
         </div>
         <div className={`right-content ${openMenu ? 'open' : ''}`}>
-          <NavLink to="https://fullscript.com/how-it-works" activeClassName="active-link">How it works</NavLink>
-          <NavLink to="https://fullscript.com/patients" activeClassName="active-link">Patients</NavLink>
-          <NavLink to="https://fullscript.com/blog" activeClassName="active-link">Blog</NavLink>
+          <div className="github-section">
+            <GitHubButton href="https://github.com/GAKINDUSTRIES/fullscript-api-prototype">Backend source</GitHubButton>
+            <GitHubButton href="https://github.com/GAKINDUSTRIES/fullscript-web-prototype">Front source</GitHubButton>
+          </div>
+          <a href="https://fullscript.com/how-it-works">How it works</a>
+          <a href="https://fullscript.com/patients">Patients</a>
+          <a href="https://fullscript.com/blog">Blog</a>
           <NavLink to="/products" className="button button-primary button-rate">Rate Products!</NavLink>
           <LogoutButton />
         </div>
