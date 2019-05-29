@@ -2,13 +2,15 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { array, func, bool, number } from 'prop-types';
 import InfiniteScroll from 'react-infinite-scroller';
+import { Redirect } from 'react-router-dom';
+
 import ProductsList from '../components/product/ProductsList';
 import EndList from '../components/common/EndList';
 import Loading from '../components/common/Loading';
 import { getProducts, rateProduct } from '../actions/productActions';
 import Navigation from '../components/common/Navigation';
 import HomePageFooter from '../components/homepage/HomePageFooter';
-
+import routes from './../constants/routesPaths';
 import '../styles/components/products-list.scss';
 
 class ProductsPage extends Component {
@@ -24,7 +26,12 @@ class ProductsPage extends Component {
   }
 
   render() {
-    const { finalPage, products, currentPage, loading, rateProduct } = this.props;
+    const { finalPage, products, currentPage, loading, rateProduct, authenticated } = this.props;
+
+    if (!authenticated) {
+      return <Redirect to={routes.login} />;
+    }
+
     return (
       <div>
         <Navigation />
@@ -53,6 +60,7 @@ ProductsPage.propTypes = {
 };
 
 const mapState = state => ({
+  authenticated: state.getIn(['session', 'authenticated']),
   products: state.getIn(['products', 'productsList']).toJS(),
   currentPage: state.getIn(['products', 'currentPage']),
   finalPage: state.getIn(['products', 'finalPage']),
